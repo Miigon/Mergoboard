@@ -1,0 +1,73 @@
+points:
+  zones:
+    matrix:
+      anchor:
+        rotate: 5
+      columns:
+        pinky:
+        ring:
+          rotate: -3
+          origin: [-12, -19]
+          stagger: 13
+        middle:
+          stagger: 3
+        index:
+          stagger: -4
+        inner:
+          stagger: -2
+      rows:
+        bottom:
+        home:
+        top:
+    thumbfan:
+      anchor:
+        ref: matrix_inner_bottom
+        shift: [-14, -19]
+      columns:
+        near:
+        home:
+          spread: 20.25
+          rotate: -22
+          origin: [-11.75, -9]
+        far:
+          spread: 20.25
+          rotate: -22
+          origin: [-9.5, -9]
+      rows:
+        thumb:
+  rotate: -2
+  key:
+    footprints:
+      - type: choc
+        nets:
+          from: GND
+          to: =name
+        params:
+          reverse: true
+          keycaps: true
+pcbs:
+  mergo:
+    footprints:
+      - type: promicro
+        anchor:
+          - ref: matrix_inner_home
+            shift: [1U, 0.5U]
+            rotate: -90
+        nets:
+          P7: matrix_pinky_top
+          P18: matrix_ring_top
+          P19: matrix_middle_top
+          P20: matrix_index_top
+          P21: matrix_inner_top
+          P15: matrix_pinky_home
+          P14: matrix_ring_home
+          P16: matrix_middle_home
+          P10: matrix_index_home
+          P1: matrix_inner_home
+          P2: matrix_pinky_bottom
+          P3: matrix_ring_bottom
+          P4: matrix_middle_bottom
+          P5: matrix_index_bottom
+          P6: matrix_inner_bottom
+          P8: thumbfan_near_thumb
+          P9: thumbfan_home_thumb
