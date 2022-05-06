@@ -364,10 +364,10 @@ pcbs:
           reverse: true
           symmetric: false
         nets:
-          A: VCC
-          B: P2 # SDA
-          C: P3 # SCL
-          D: GND
+          A: GND
+          B: VCC
+          C: P2 # SDA
+          D: P3 # SCL
       jumper_l:
         type: jumper
         anchor:
@@ -435,7 +435,7 @@ pcbs:
             - matrix_pinky_bottom
           shift: [0.75 kx, 0]
         params:
-          text: "Mergoboard rev0 2022-05-03\\nby Miigon"
+          text: "Mergoboard rev1 2022-xx-xx\\nby Miigon"
           justify: left
       info_r:
         type: text
@@ -445,7 +445,7 @@ pcbs:
           shift: [0.75 kx, 0]
         params:
           layer: B.SilkS
-          text: "Mergoboard rev0 2022-05-03\\nby Miigon"
+          text: "Mergoboard rev1 2022-xx-xx\\nby Miigon"
           justify: right mirror
       jlc_order_number:
         type: text
