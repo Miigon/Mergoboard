@@ -1,0 +1,10 @@
+1. fix trrs connector bug (rev0 incorrectly connected vcc to sleeve)
+2. move B+ and B- pads out so that mcu sockets could be thinner
+3. trrs connector footprint stabilizers should be 1.2 instead of 1.5
+4. move mounting holes around to avoid obstructing switches
+5. (maybe) use another mcu footprint that uses jumpers to support flipping
+6. change the battery power switch so both halves are all on or off when the switch is in the same position
+	(currently it results in one being on and another being off, which is confusing )
+7. shrink the mounting holes a little bit (currently way larger than a M3 screw could ever need.)
+8. make reset switch flippable so it's on the top side of the board on both hands. (or bottom for a cleaner look?) 
+9. carry RAW instead of VCC through TRRS cable
